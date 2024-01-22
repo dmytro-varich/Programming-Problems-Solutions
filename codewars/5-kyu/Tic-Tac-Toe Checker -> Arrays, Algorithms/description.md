@@ -8,7 +8,7 @@ Assume that the board comes in the form of a 3x3 array, where the value is `0` i
 ```
 We want our function to return:
 - `-1` if the board is not yet finished AND no one has won yet (there are empty spots),
-- ``1 if "X" won,
+- `1` if "X" won,
 - `2` if "O" won,
 - `0` if it's a cat's game (i.e. a draw).
 You may assume that the board passed in is valid in the context of a game of Tic-Tac-Toe.
