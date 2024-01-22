@@ -1,0 +1,15 @@
+C:\Users\admin\Desktop\tutorials\csharp\object-oriented-programming\bank-account\obj\Debug\net6.0\bank-account.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\tutorials\csharp\object-oriented-programming\bank-account\obj\Debug\net6.0\bank-account.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Desktop\tutorials\csharp\object-oriented-programming\bank-account\obj\Debug\net6.0\bank-account.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\tutorials\csharp\object-oriented-programming\bank-account\obj\Debug\net6.0\bank-account.AssemblyInfo.cs
+C:\Users\admin\Desktop\tutorials\csharp\object-oriented-programming\bank-account\obj\Debug\net6.0\bank-account.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\tutorials\csharp\object-oriented-programming\bank-account\bin\Debug\net6.0\bank-account.exe
+C:\Users\admin\Desktop\tutorials\csharp\object-oriented-programming\bank-account\bin\Debug\net6.0\bank-account.deps.json
+C:\Users\admin\Desktop\tutorials\csharp\object-oriented-programming\bank-account\bin\Debug\net6.0\bank-account.runtimeconfig.json
+C:\Users\admin\Desktop\tutorials\csharp\object-oriented-programming\bank-account\bin\Debug\net6.0\bank-account.dll
+C:\Users\admin\Desktop\tutorials\csharp\object-oriented-programming\bank-account\bin\Debug\net6.0\bank-account.pdb
+C:\Users\admin\Desktop\tutorials\csharp\object-oriented-programming\bank-account\obj\Debug\net6.0\bank-account.dll
+C:\Users\admin\Desktop\tutorials\csharp\object-oriented-programming\bank-account\obj\Debug\net6.0\refint\bank-account.dll
+C:\Users\admin\Desktop\tutorials\csharp\object-oriented-programming\bank-account\obj\Debug\net6.0\bank-account.pdb
+C:\Users\admin\Desktop\tutorials\csharp\object-oriented-programming\bank-account\obj\Debug\net6.0\bank-account.genruntimeconfig.cache
+C:\Users\admin\Desktop\tutorials\csharp\object-oriented-programming\bank-account\obj\Debug\net6.0\ref\bank-account.dll
