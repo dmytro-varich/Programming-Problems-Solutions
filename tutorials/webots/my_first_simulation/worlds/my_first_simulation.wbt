@@ -1,0 +1,44 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/containers/protos/WoodenBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+
+WorldInfo {
+  basicTimeStep 16
+}
+Viewpoint {
+  orientation -0.20022574982465244 -0.29935673057002443 0.9328961340736606 5.038098075351469
+  position -0.5395639224145463 1.5562768029961638 0.552028909762743
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorTileSize 0.25 0.25
+  wallHeight 0.05
+}
+WoodenBox {
+  translation 0.186892 0.0575668 0.05
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation -0.0580565 -0.321112 0.05
+  name "wooden box(1)"
+  size 0.1 0.1 0.1
+  mass 0.2
+}
+WoodenBox {
+  translation -0.316209 0.181047 0.05
+  name "wooden box(2)"
+  size 0.1 0.1 0.1
+  mass 0.2
+}
+E-puck {
+  translation -0.0741366 0.426778 0.000146578
+  rotation -0.0003967708460825777 0.0007863986949361042 0.9999996120749189 1.68034
+  controller "epuck_go_forward"
+}
