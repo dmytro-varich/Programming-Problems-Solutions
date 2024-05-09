@@ -58,7 +58,7 @@ if uploaded_image is not None:
       # Path to save the model locally
       local_model_path = 'handwrittendigit.model'
       # Loading a model from a remote source and saving to a local file
-      request.url_retrieve(model_url, local_model_path)
+      requests.url_retrieve(model_url, local_model_path)
       # Loading a model from a local file
       model = tf.keras.models.load_model(local_model_path)
       # use the model to predict new image
