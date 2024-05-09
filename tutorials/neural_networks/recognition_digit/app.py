@@ -55,7 +55,12 @@ if uploaded_image is not None:
     if submit:
       # load the model
       model_url = 'https://raw.githubusercontent.com/dmytro-varich/Programming-Problems-Solutions/main/tutorials/neural_networks/recognition_digit/handwrittendigit.model'
-      model = tf.keras.models.load_model(model_url)
+      # Path to save the model locally
+      local_model_path = 'handwrittendigit.model'
+      # Loading a model from a remote source and saving to a local file
+      urllib.request.urlretrieve(model_url, local_model_path)
+      # Loading a model from a local file
+      model = tf.keras.models.load_model(local_model_path)
       # use the model to predict new image
       prediction = classify_digit(model, temp_image_path)
       st.subheader('Prediction Result')
