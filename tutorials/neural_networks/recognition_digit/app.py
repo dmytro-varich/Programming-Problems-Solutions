@@ -56,7 +56,7 @@ if uploaded_image is not None:
       # load the model
       model_url = r'https://raw.githubusercontent.com/dmytro-varich/Programming-Problems-Solutions/main/tutorials/neural_networks/recognition_digit/handwrittendigit.model'
       # Path to save the model locally
-      local_model_path = 'handwrittendigit.model'
+      local_model_path = 'handwrittendigit.keras'
       # Loading a model from a remote source and saving to a local file
       response = requests.get(model_url)
       with open(local_model_path, 'wb') as f:
