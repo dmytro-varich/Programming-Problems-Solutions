@@ -54,7 +54,7 @@ if uploaded_image is not None:
 
     if submit:
       # load the model
-      model_url = 'https://raw.githubusercontent.com/dmytro-varich/Programming-Problems-Solutions/main/tutorials/neural_networks/recognition_digit/handwrittendigit.model'
+      model_url = r'https://raw.githubusercontent.com/dmytro-varich/Programming-Problems-Solutions/main/tutorials/neural_networks/recognition_digit/handwrittendigit.model'
       # Path to save the model locally
       local_model_path = 'handwrittendigit.model'
       # Loading a model from a remote source and saving to a local file
