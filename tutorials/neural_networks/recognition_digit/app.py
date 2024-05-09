@@ -62,7 +62,7 @@ if uploaded_image is not None:
       with open(local_model_path, 'wb') as f:
           f.write(response.content)
       # Loading a model from a local file
-      model = tf.keras.models.load_model(local_model_path)
+      model = tf.keras.models.load_model(local_model_path, compile=False)
       input_shape = (28, 28, 1)  
       model.build(input_shape)
       # use the model to predict new image
