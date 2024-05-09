@@ -6,7 +6,7 @@ import tensorflow as tf
 
 import streamlit as st
 from PIL import Image
-import urllib.request
+import urllib3.request
 import tempfile
 
 # function 1 : to classify the image
@@ -58,7 +58,7 @@ if uploaded_image is not None:
       # Path to save the model locally
       local_model_path = 'handwrittendigit.model'
       # Loading a model from a remote source and saving to a local file
-      urllib.request.urlretrieve(model_url, local_model_path)
+      urllib3.request.urlretrieve(model_url, local_model_path)
       # Loading a model from a local file
       model = tf.keras.models.load_model(local_model_path)
       # use the model to predict new image
