@@ -6,7 +6,7 @@ import tensorflow as tf
 
 import streamlit as st
 from PIL import Image
-
+import urllib.request
 import tempfile
 
 # function 1 : to classify the image
