@@ -62,7 +62,7 @@ if uploaded_image is not None:
       with open(local_model_path, 'wb') as f:
           f.write(response.content)
       # Loading a model from a local file
-      model = tf.keras.saving.load_model(local_model_path)
+      model = tf.keras.models.load_model(local_model_path)
       # use the model to predict new image
       prediction = classify_digit(model, temp_image_path)
       st.subheader('Prediction Result')
