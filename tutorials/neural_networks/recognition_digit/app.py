@@ -9,12 +9,6 @@ from PIL import Image
 import requests
 import tempfile
 
-class CustomLayer(tf.keras.layers.Layer):
-    def __init__(self):
-        super(CustomLayer, self).__init__()
-
-    def call(self, inputs, training=None):
-        return inputs
 
 # function 1 : to classify the image
 def classify_digit(model, image):
