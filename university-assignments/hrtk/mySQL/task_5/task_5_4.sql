@@ -1,0 +1,11 @@
+use college;
+
+-- Commad: "ALTER" - GRANTED
+ALTER TABLE teacher ADD salary INT;
+
+-- Commad: "SELECT" - GRANTED/CHECKING THIS TABLE WITH NEW UPDATES
+SELECT * FROM teacher;
+
+-- Commad: "DELETE" - CHECKING: DENIED TO USER 
+DELETE FROM teacher
+WHERE id > 1;
