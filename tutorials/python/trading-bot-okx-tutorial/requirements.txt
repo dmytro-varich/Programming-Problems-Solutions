@@ -1,0 +1,4 @@
+python-okx==0.3.0
+python-dotenv>=1.0.0
+ta==0.10.2
+pandas>=2.0.0
