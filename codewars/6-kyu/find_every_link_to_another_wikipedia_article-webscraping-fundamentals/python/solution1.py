@@ -4,9 +4,6 @@ from bs4 import BeautifulSoup
 HOST = 'https://en.wikipedia.org'
 EXCLUDING_NAMESPACES = re.compile(f"^/wiki/(?!\w+:)")
 
-def is_string_valid(s: str) -> bool:
-    return not any(exception in s for exception in LST_EXCEPTION)
-
 def wikiscraping(url: str) -> dict:
     response = requests.get(url)
     response.raise_for_status()
