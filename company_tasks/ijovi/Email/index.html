@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email</title>
+    <style>
+      html {
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      header {
+        text-align: center;
+      }
+
+      header img {
+        width: auto;
+        height: 50px;
+        max-width: 100px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .intro-section {
+        background-color: black;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .intro-section .background-top-image {
+        background-image: url("source images/hero-bg.jpg");
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: cover;
+        width: 100%;
+        height: 90vh;
+        position: relative;
+        z-index: 1;
+      }
+
+      .intro-section .background-top-image .text-on-hero-bg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        padding: 20px;
+        width: 80%;
+      }
+
+      .intro-section .background-top-image .text-on-hero-bg h1 {
+        color: white;
+        font-size: 3em;
+        font-weight: bold;
+        line-height: 1.2;
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 45px;
+      }
+
+      .intro-section .background-top-image .text-on-hero-bg img {
+        width: auto;
+        height: auto;
+      }
+
+      .intro-section .background-middle .middle-content {
+        display: flex;
+        flex-direction: column;
+        padding-left: 6%;
+      }
+
+      .intro-section .background-middle .middle-content p {
+        color: white;
+        border-left: 3px solid white;
+        padding-left: 15px;
+        line-height: 1.5;
+        margin-right: 67%;
+        font-size: 1.6875rem;
+        width: 35%;
+      }
+
+      .intro-section .background-middle .middle-content p:last-child {
+        margin-left: 40%;
+        width: 50%;
+      }
+
+      .intro-section .footer-image-bottom,
+      footer .footer-image-bottom {
+        height: 10vh;
+      }
+
+      .intro-section .footer-image-bottom {
+        background-image: url("source images/hero_footer_bottom.jpg");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        width: 100%;
+        z-index: 1;
+      }
+
+      .intro-section span,
+      .main-info span {
+        color: #b066f9;
+        font-style: italic;
+      }
+
+      .main-info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 20px;
+        padding-top: 0px;
+      }
+
+      .main-info h1 {
+        font-size: 1.75rem;
+      }
+
+      .main-info .head-button {
+        color: #7800f4;
+        background-color: white;
+        border: 3px solid #7800f4;
+        border-radius: 60px;
+        padding: 0.75rem 1.5rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-style: normal;
+      }
+
+      .main-info .info-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        text-align: left;
+        margin-top: 40px;
+        background-color: #e8e8e8;
+        border-radius: 30px;
+        padding: 30px;
+      }
+
+      .main-info .info-title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .main-info .info-title h3 {
+        padding-left: 15px;
+        font-size: 1.25rem;
+      }
+
+      .main-info .info-item li {
+        font-size: 1.125rem;
+        width: 100%;
+      }
+
+      footer {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        text-align: center;
+        align-items: center;
+      }
+
+      footer p {
+        color: white;
+        font-size: 1.75rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        padding-top: 0%;
+      }
+
+      footer a {
+        text-decoration: none;
+        font-size: 1.125rem;
+        font-weight: bold;
+        color: #7800f4;
+        background-color: white;
+        border: 2px solid #7800f4;
+        border-radius: 25px;
+        padding: 0.5em 1em;
+      }
+
+      footer .footer-image-bottom {
+        background-image: url("source images/hero_footer_bottom.jpg");
+        margin-top: 0px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      @media (max-width: 768px) {
+        html {
+          font-size: 14px;
+        }
+
+        .intro-section .background-top-image {
+          height: 23vh;
+          background-size: contain;
+        }
+
+        .intro-section .background-top-image .text-on-hero-bg h1 {
+          font-size: 1.2rem;
+          width: 100%;
+          margin-bottom: 3%;
+        }
+
+        .intro-section .background-top-image .text-on-hero-bg img {
+          width: 30vw;
+          height: auto;
+        }
+
+        .intro-section .background-middle .middle-content p {
+          padding-left: 7px;
+          margin-right: 67%;
+          font-size: 0.7rem;
+          width: 54%;
+        }
+
+        .intro-section .background-middle .middle-content p:last-child {
+          margin-left: 26%;
+          width: 63%;
+        }
+
+        .intro-section .footer-image-bottom,
+        footer .footer-image-bottom {
+          height: 5vh;
+        }
+
+        .main-info .info-grid {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .intro-section .footer-image-bottom,
+        footer .footer-image-bottom {
+          height: 5vh;
+        }
+
+        .intro-section .background-top-image {
+          height: 23vh;
+          background-size: contain;
+        }
+
+        .intro-section .background-top-image .text-on-hero-bg h1 {
+          font-size: 2.2rem;
+          width: 100%;
+          margin-bottom: 3%;
+        }
+
+        .intro-section .background-top-image .text-on-hero-bg img {
+          width: 25vw;
+          height: auto;
+        }
+
+        .intro-section .background-middle .middle-content p {
+          padding-left: 15px;
+          margin-right: 67%;
+          font-size: 1rem;
+          width: 40%;
+        }
+
+        .intro-section .background-middle .middle-content p:last-child {
+          margin-left: 26%;
+          width: 63%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="source images\logo.png" alt="logo" class="header-logo-image" />
+    </header>
+    <main>
+      <section class="intro-section">
+        <div class="background-top-image">
+          <div class="text-on-hero-bg">
+            <h1>
+              ijovi is your Global Medical, Education & Omnichannel Partner
+            </h1>
+            <img src="source images\hero-cta.png" alt="button" />
+          </div>
+        </div>
+        <div class="background-middle">
+          <div class="middle-content">
+            <p>
+              As a global healthcare communications agency, we help companies
+              communicate the value of their products to patients and HCPs.
+            </p>
+            <p>
+              We do this by
+              <span>bridging marketing and medical,</span>
+              putting the patient experience at the heart of the brand strategy.
+              In our experience, the best results occur when we really get to
+              know our clients and become their strategic partner.
+            </p>
+          </div>
+        </div>
+        <div class="footer-image-bottom"></div>
+      </section>
+      <section class="main-info">
+        <h1>
+          <span>ijovi</span> partnering with you to deliver global medical
+          solutions, education, and omnichannel excellence
+        </h1>
+        <span class="head-button">Let's talk about your project!</span>
+        <div class="info-grid">
+          <div class="info-item">
+            <div class="info-title">
+              <img src="source images\tile1.png" alt="item1" />
+              <h3>
+                Omnichannel<br />
+                Strategy & Execution
+              </h3>
+            </div>
+            <ul>
+              <li>Brand Launch & Planning</li>
+              <li>Customer Experience</li>
+              <li>Strategy</li>
+              <li>
+                Omnichannel Tactics &<br />
+                Journeys
+              </li>
+            </ul>
+          </div>
+          <div class="info-item">
+            <div class="info-title">
+              <img src="source images\tile2.png" alt="item2" />
+              <h3>
+                Design, Communication<br />
+                & Digital Marketing
+              </h3>
+            </div>
+            <ul>
+              <li>Branding & Design</li>
+              <li>Video & Animation</li>
+              <li>Podcasts</li>
+              <li>Website Tools & Resources</li>
+            </ul>
+          </div>
+          <div class="info-item">
+            <div class="info-title">
+              <img src="source images\tile3.png" alt="item3" />
+              <h3>
+                Medical Affairs<br />
+                Education
+              </h3>
+            </div>
+            <ul>
+              <li>Medical Storytelling</li>
+              <li>
+                HCP & Patient Educational<br />
+                Material
+              </li>
+              <li>Curriculum Development</li>
+              <li>
+                Scientific Speaker Programs &<br />
+                Training
+              </li>
+            </ul>
+          </div>
+          <div class="info-item">
+            <div class="info-title">
+              <img src="source images\tile4.png" alt="item4" />
+              <h3>
+                Insights &<br />
+                Intelligence
+              </h3>
+            </div>
+            <ul>
+              <li>Data & Congress Highlights</li>
+              <li>KOL Mapping</li>
+              <li>Forecasting & Business Cases</li>
+              <li>Market & Competitor Research</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Come work with us</p>
+      <a href="#">Contact us ↗</a>
+      <div class="footer-image-bottom"></div>
+    </footer>
+  </body>
+</html>

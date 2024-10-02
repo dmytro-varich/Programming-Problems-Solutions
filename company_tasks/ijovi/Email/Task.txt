@@ -1,0 +1,3 @@
+Create a email as shown in the file "Full email image.jpg".
+All the text in the file "Email Text content.txt" should be in the email as plain text. 
+So if images are turned off, the user can read this text. The email will be tested on Gmail, and Outlook 2016.
