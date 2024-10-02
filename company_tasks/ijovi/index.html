@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Banner</title>
+    <style>
+      body {
+        background-color: black;
+        width: 20%;
+        height: 0;
+        margin: 0;
+        /* overflow: hidden; */
+      }
+
+      .sprite {
+        background: url(sprite.png);
+        background-size: 245%;
+        background-repeat: no-repeat;
+      }
+
+      .circle {
+        position: relative;
+        left: 0;
+        top: 130px;
+        width: 100%;
+        height: 100%;
+        animation: up 1s 5s forwards, fadeOut 1s 10s forwards;
+
+        ._ring,
+        ._black_circle,
+        ._shadow {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          aspect-ratio: 1 / 1;
+          border-radius: 50%;
+        }
+
+        ._ring,
+        ._shadow {
+          width: 240px;
+          animation-name: rotate;
+          animation-duration: 10s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+        }
+
+        ._ring {
+          background: rgb(213, 187, 247);
+          background: linear-gradient(
+            142deg,
+            rgba(213, 187, 247, 1) 0%,
+            rgba(119, 0, 244, 1) 100%
+          );
+          animation-direction: reverse;
+        }
+
+        ._black_circle {
+          width: 235px;
+          background: rgb(0, 0, 0);
+        }
+
+        ._shadow {
+          background-color: rgba(119, 0, 244, 1);
+          filter: blur(30px);
+          transform-origin: 65% 50%;
+        }
+
+        .circle-content-1-frame {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 1;
+          gap: 5px;
+          animation: fadeOut 1s 5s forwards;
+        }
+
+        .logo-first {
+          width: 125px;
+          height: 57px;
+          background-position: -110px 0;
+        }
+
+        .text-first {
+          background: url(sprite2.png);
+          background-repeat: no-repeat;
+          width: 165px;
+          height: 60px;
+          background-position: 0px 0px;
+          background-size: 100%;
+          animation: fadeIn 0.5s 1s forwards;
+        }
+
+        .cover-1f-1,
+        .cover-1f-2,
+        .cover-1f-3 {
+          position: absolute;
+          background-color: black;
+          width: 100%;
+          right: 0;
+        }
+
+        .cover-1f-1 {
+          height: 20px;
+          top: 30%;
+          animation: reveal 1s ease 1s forwards;
+        }
+
+        .cover-1f-2 {
+          height: 22px;
+          top: 40%;
+          animation: reveal 1s ease 1.5s forwards;
+        }
+
+        .cover-1f-3 {
+          height: 15px;
+          top: 50%;
+          animation: reveal 1s ease 2.15s forwards;
+        }
+
+        .button-first {
+          width: 160px;
+          height: 40px;
+          background-position: -3px -223px;
+          background-size: 155%;
+        }
+
+        .click {
+          width: 43px;
+          height: 30px;
+          background-position: -160px -225px;
+          background-size: 570%;
+        }
+
+        .button-first,
+        .click {
+          opacity: 0;
+          animation: fadeIn 1s 3.5s forwards;
+        }
+
+        .circle-content-2-frame {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          left: 50%;
+          transform: translate(-48%, 24%);
+          z-index: 1;
+          gap: 45px;
+        }
+
+        .logo-second {
+          width: 105px;
+          height: 57px;
+          background-position: 2px 0;
+          opacity: 0;
+          animation: fadeIn 3s 5.3s forwards;
+        }
+
+        .text-second {
+          width: 243px;
+          height: 90px;
+          background-position: 0px -97px;
+          background-size: 85%;
+          opacity: 0;
+          animation: fadeIn 3s 5.5s forwards;
+        }
+
+        .cover-2f-1 {
+          position: absolute;
+          background-color: black;
+          width: 100%;
+          opacity: 0;
+          height: 85px;
+          bottom: 2%;
+          left: 0;
+          width: 84%;
+          animation: fadeIn 0.1s 5.5s forwards,
+            reveal-down 0.2s ease 5.5s forwards;
+        }
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: translate(-50%, -50%) rotate(0);
+        }
+        100% {
+          transform: translate(-50%, -50%) rotate(360deg);
+        }
+      }
+
+      @keyframes up {
+        0% {
+          top: 120px;
+        }
+        100% {
+          top: -35px;
+        }
+      }
+
+      @keyframes fadeOut {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 103%;
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .frame-3 {
+        background: url(scroll_frame_full.jpg);
+        background-repeat: no-repeat;
+        position: relative;
+        width: 100%;
+        height: 200vh;
+        z-index: 1;
+        background-size: 100%;
+        opacity: 0;
+        animation: fadeIn 4s 11s forwards, scroll 10s linear 12s forwards;
+      }
+
+      .button-second {
+        position: absolute;
+        width: 160px;
+        height: 44px;
+        left: 5%;
+        top: 80.4%;
+        background-position: 0px -270px;
+        background-size: 155%;
+        animation: fadeIn 1s 11s forwards;
+        z-index: 2;
+      }
+
+      @keyframes scroll {
+        0% {
+          transform: translateY(0);
+        }
+        25% {
+          transform: translateY(0);
+        }
+        to {
+          transform: translateY(-68.5%);
+        }
+      }
+
+      @keyframes reveal {
+        0% {
+          width: 100%;
+        }
+        100% {
+          width: 0;
+        }
+      }
+
+      @keyframes reveal-down {
+        0% {
+          height: 85px;
+        }
+        100% {
+          height: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="circle">
+      <div class="_shadow"></div>
+      <div class="_ring"><div class="_black_circle"></div></div>
+      <div class="circle-content-1-frame">
+        <div class="sprite logo-first"></div>
+        <div class="sprite text-first"></div>
+        <div class="cover-1f-1"></div>
+        <div class="cover-1f-2"></div>
+        <div class="cover-1f-3"></div>
+        <div class="sprite button-first"></div>
+        <div class="sprite click"></div>
+      </div>
+      <div class="circle-content-2-frame">
+        <div class="sprite logo-second"></div>
+        <div class="sprite text-second"></div>
+        <div class="cover-2f-1"></div>
+      </div>
+    </div>
+    <div class="content-3-frame">
+      <div class="frame-3"><div class="sprite button-second"></div></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+Create an animated banner as shown in the file "Banner.gif".
+The code for circle:
+<div class="circle">
+	<div class="_shadow"></div>
+	<div class="_ring"><div class="_black_circle"></div></div>
+</div>
+.circle {
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+
+	._ring,
+	._black_circle,
+	._shadow {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		aspect-ratio: 1 / 1;
+		border-radius: 50%;
+	}
+
+	._ring,
+	._shadow {
+		width: 240px;
+		animation-name: rotate;
+		animation-duration: 10s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+	}
+
+	._ring {
+		background: rgb(213, 187, 247);
+		background: linear-gradient(
+			142deg,
+			rgba(213, 187, 247, 1) 0%,
+			rgba(119, 0, 244, 1) 100%
+		);
+		animation-direction: reverse;
+	}
+
+	._black_circle {
+		width: 235px;
+		background: rgb(0, 0, 0);
+	}
+
+	._shadow {
+		background-color: rgba(119, 0, 244, 1);
+		filter: blur(30px);
+		transform-origin: 65% 50%;
+	}
+}
+
+@keyframes rotate {
+	0% {
+		transform: translate(-50%, -50%) rotate(0);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+}
