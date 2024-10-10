@@ -1,0 +1,93 @@
+viacposchodový dom - многоэтажный дом
+anténa - телевизионная антена
+okno - окно
+dvere - дверь
+bazén - басейн
+záhrada - сад
+strom - дерево 
+strecha - крыша
+komín - комин
+domový zvonček - дверной звонок
+strešné okno - окно настенное на крыше
+zábradlia - перила 
+brána - ворота 
+zeleninová záhradka - огород
+kvetinový záhon - клумба
+pevničné okno - подвальное окно
+odpadkový kôš - мусорный бак
+plot - забор
+živý plot - живая изгородь 
+balkón - балкон
+terasa - тераса
+garáž - гараж
+trávnik - газон
+cesta - дорога
+schody - лестница
+chladnička - холодильник
+maslo - масло
+syr - сыр
+jogurt - йогурт
+vajce - яйцо
+klobása/saláma - колбаса
+med - мёд
+kurča - курица
+mlieko - молоко
+homár - омар
+pizza - пицца
+suši - суши
+vino - вино
+džem/lekvár - варенье
+olej - растительное масло
+ocot - уксус
+kečup - кетчуп
+mäso - мясо
+ryba - рыба
+soľ - соль
+cukor - сахар
+chlieb - хлеб
+jedálny listok - меню
+účet - счет
+čašník - официант
+višňa - вишня
+jablko - яблоко
+červený melón - арбуз
+jahoda - клубника
+malina - малина
+avokádo - авокадо
+mango - манго
+pomaranč - апельсин
+grapefruit - грейпфрут
+mandarínka - мандарин
+banán - банан
+ananás - ананас
+žltý melón - дыня
+citrón - лимон
+hruška - груша
+čučoriedka - черника
+hrozno - виноград
+černica - ежевика
+slivka - слива
+marhuľa - абрикос
+broskyňa - персик
+kiwi - киви
+kapusta - капуста 
+cesnak - чеснок
+cuketa - кабачок
+zemiaky - картофель
+tekvica - тыква
+patizón - патиссон 
+kukurica - кукуруза
+kôpor - укроп
+zelená fazuľka - спаржевая фасоль 
+hlávkový šalát - салат-латук
+pekinská kapusta - пекинская капуста
+reďkovka - редис
+paradajka - помидор
+mrkva - морковь
+baklažán - баклажан
+uhorka - огурец
+cibuľa - лук
+paprika - перец
+hrášok - горох
+cvikla - буряк
+feferónka - острый перец

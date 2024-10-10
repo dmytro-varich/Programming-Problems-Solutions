@@ -1,0 +1,52 @@
+tanier - тарелка 
+hlboký tanier - глубокая тарелка
+miska - миска
+pohár - стакан
+pohár na vino - бокал 
+hrniec - кастрюля 
+pokrievka - крышка 
+lyžica - ложка
+vidlička - вилка
+nôž - нож
+lyžička - чайная ложка 
+podšálka - блюдце
+šálka - чашка
+čajová kanvička - заварник 
+cukornička - сахарница
+zástera - кухонный передник
+panvica - сковорода
+špongia na riad - губка для посуды
+prípravok na umývanie riadu - средство для мытья посуды
+hriankovač - тостер
+kuchynská váha - кухонные весы
+kanvica - чайник
+kavovár - кофеварка
+odsávač pár - вытяжка
+hrnček - кружка
+zavárací pohár - консервная банка 
+tácka - поднос
+obracačka - лопатка
+vidlička na mäso - вилка для мяса
+lyžica na zeleninu - ложка для гарнира
+miagač na zemiaky - картофелемялка 
+drevená lyžica - деревянная ложка 
+doska na krájanie - разделочная доска
+kuchynská rukavica - кухонные рукавицы
+kuchynské strúhadlo - терка
+šalátová misa - салатница
+cedidlo - дуршлаг
+kuchynský drez - раковина
+vývrtka - штопор
+otvárač na konzervy - консервный нож 
+otvárač na fľaše - открывалка
+šľahacia metla - венчик
+naberačka - половник
+kuchárska lyžica - поварская ложка
+penovačka - шумовка
+fľaša - бутылка
+kalíšok na vajce - подставка для яиц 
+varná doska - кухонная плита
+rúra na pečenie - духовая печь
+mikrovlnná rúra - микроволновка
+mixer - миксер
+umývačka riadu - посудомоечная машина

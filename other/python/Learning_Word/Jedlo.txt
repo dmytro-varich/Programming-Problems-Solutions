@@ -1,0 +1,24 @@
+maslo - олия
+syr - сир
+jogurt - йогурт
+vajce - яйце
+klobása/saláma - ковбаса
+med - мясо
+kurča - курка
+mlieko - молоко
+homár - омар
+pizza - піца
+suši - суші
+vino - вино
+džem/lekvár - варення
+olej - рослинна олия
+ocot - оцет
+kečup - кетчуп
+mäso - мясо
+ryba - риба
+soľ - сіль
+cukor - цукор
+chlieb - хліб
+jedálny listok - меню
+účet - рахунок
+čašník - офіціант
