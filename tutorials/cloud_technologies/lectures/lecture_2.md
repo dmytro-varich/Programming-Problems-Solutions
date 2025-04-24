@@ -149,4 +149,91 @@ CMD ["gunicorn", "app:app", "-b", "0.0.0.0:80", \
   docker run -it --rm nginx
   ```  
 
-### Čo sa deje po spustení?
+## 🚀 Čo sa deje po spustení kontajnera?
+
+1. **Kontrola a stiahnutie image-u**  
+   Ak image `nginx` nie je dostupný lokálne, Docker ho stiahne z Docker Hub (alebo iného registry).
+2. **Vytvorenie kontajnera**  
+   Na základe image-u Docker vytvorí kontajner s potrebnými nastaveniami.
+3. **Alokácia súborového systému**  
+   Docker vytvorí vrstvený súborový systém s read-write vrstvou navrchu.
+4. **Pripojenie k sieti**  
+   Vytvorí sa sieťový interface a kontajner sa pripojí do defaultnej siete (bridge).
+5. **Spustenie kontajnera**  
+   Ak je použitý `-it`, kontajner je interaktívny a prijíma vstupy z terminálu.
+6. **Ukončenie a vymazanie**  
+   Pri použití `--rm` sa kontajner automaticky vymaže po `exit`.
+
+---
+
+## 🌐 Virtuálna sieť v Dockeri
+
+Docker využíva **software-defined networking**, čo znamená, že siete sú definované programovo, dynamicky.
+
+### Typy sietí (drivers):
+- **`bridge`** (default) – kontajnery komunikujú medzi sebou, ale sú izolované od hostiteľa.  
+- **`host`** – zdieľa sieť s hostiteľom, žiadna izolácia.  
+- **`none`** – žiadna sieťová funkcionalita.  
+
+---
+
+## 🗂 Virtuálny súborový systém
+
+- Každý kontajner vidí **vlastný súborový systém**.
+- Docker využíva mechanizmus **Copy-on-Write (CoW)**:
+  - Ak súbor existuje v image, číta sa priamo.
+  - Ak sa upravuje, je skopírovaný do read-write vrstvy kontajnera.
+- `docker ps -s` zobrazí:
+  - `SIZE`: veľkosť dát v read-write vrstve
+  - `VIRTUAL SIZE`: veľkosť image + aktuálne dáta (môže byť zdieľaná inými kontajnermi)
+
+---
+
+## 💾 Oddelenie dát od aplikácie
+
+Aplikácie v Dockeri sú štandardne **stateless**. Ak potrebujeme uložiť dáta, použijeme:
+
+### 🔹 Data Volumes
+- Ukladajú **perzistentné dáta** mimo samotného kontajnera
+- Vysoký výkon, flexibilita (aj cez cloudové drivere)
+- Odporúčaná forma ukladania dát
+
+### 🔸 Alternatíva: Bind Mounts
+- Mappovanie medzi adresárom na hoste a v kontajneri
+- Menej flexibilné a bezpečné
+
+📦 **Príklad:**
+```bash
+docker run -p 80:80 -v /var/www:/var/www nginx
+```
+→ Mapuje porty a pripojí lokálny adresár ako volume.
+
+---
+
+## 🕹 Docker Swarm – Orchestration Layer
+
+- Umožňuje **škálovanie a manažment viacerých kontajnerov** v clustri.
+- Vstavaný do Docker Engine (žiadna extra inštalácia).
+
+### Základné komponenty:
+- **Node** – inštancia Docker Engine (môže byť manager alebo worker)
+- **Manager** – rozhoduje, čo a kde beží, rozdeľuje úlohy, zabezpečuje **load balancing**
+- **Worker** – vykonáva pridelené úlohy
+
+### Typy služieb:
+- **Replicated Service** – definuješ počet inštancií, ktoré sa majú spustiť
+- **Global Service** – služba beží na **každom** node
+
+| ![image](https://github.com/user-attachments/assets/8e594634-2d80-4ae3-8218-416635240275) | 
+|:------------------------------------------:|
+| Docker Swarm                      | 
+
+### ❗️ Možné problémy
+- Závislosť na Docker Hub.
+- Časté využívanie neoverených obrazov.
+- Docker daemon beží ako "root".
+
+### 📍 Docker sumár
+- Je virtualizačná vrstva medzi jadrom a aplikáciou.
+- Umožňuje ľahko spustiť aplikáciu v cloude.
+- Zjednodušie inštaláciu.
