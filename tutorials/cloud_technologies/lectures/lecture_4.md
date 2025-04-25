@@ -133,7 +133,7 @@ a predvídateľne s minimálnou námahou.
 
 ## ☁️ Edge, Fog Cloud Computing
 
-`Edge computing` znamená spracovanue dát **priamo** na okraji siete, teda čo najbližšie k 
+1. `Edge computing` znamená spracovanue dát **priamo** na okraji siete, teda čo najbližšie k 
 zariadeniam, ktoré tieto dáta generujú (senzory, kamery, IoT zariadenia...).
 
 > Cieľom je **minimalizovať latecniu**, znížiť záťaž siete a zabezpečiť **rýchlu reakciu**.
@@ -142,7 +142,7 @@ zariadeniam, ktoré tieto dáta generujú (senzory, kamery, IoT zariadenia...).
  - Samojazdiace auto analyzuje obraz z kamier a rozhofuje v reálnom čase lokálne, bez potreby odosielania dát do cloudu.
  - Smart kamera v továrni detekuje poruchu stroja a okamžite reaguje.
 
-Fog computing je **medzivrstva medzi edge zariadeniami a centrálnym cloudom**. Spracováva časť
+2. `Fog computing` je **medzivrstva medzi edge zariadeniami a centrálnym cloudom**. Spracováva časť
 dát bližšie k zdroju ako cloud, ale nie priamo na zariadení ako edge.
 
 > Slúži ako **lokálny dátový uzol** - vykonáva predspracovanie, filtrovanie alebo agregáciu dát.
