@@ -133,7 +133,7 @@ a predvídateľne s minimálnou námahou.
 
 ## ☁️ Edge, Fog Cloud Computing
 
-1. `Edge computing` znamená spracovanue dát **priamo** na okraji siete, teda čo najbližšie k 
+1. `Edge computing` znamená spracovanie dát **priamo** na okraji siete, teda čo najbližšie k 
 zariadeniam, ktoré tieto dáta generujú (senzory, kamery, IoT zariadenia...).
 
 > Cieľom je **minimalizovať latecniu**, znížiť záťaž siete a zabezpečiť **rýchlu reakciu**.
