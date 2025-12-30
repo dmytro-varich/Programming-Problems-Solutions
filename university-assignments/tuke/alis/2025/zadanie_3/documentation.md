@@ -21,15 +21,18 @@ To determine who ate the cookie, we solve the problem using **predicate logic**.
 ## Contents
 
 1. **Vocabulary**
+   - Constants
+   - Variables
+   - Predicates
 2. **Knowledge Base Formalization**
 3. **CNF Transformation**
 4. **Knowledge Base Clauses**
 5. **Resolution with Set-of-Support Strategy**
-	- 5.1 Daniela
-	- 5.2 Cecilia
-	- 5.3 Bruno
-	- 5.4 Eduardo
-	- 5.5 Ana		
+  - 5.1 Daniela
+  - 5.2 Cecilia
+  - 5.3 Bruno
+  - 5.4 Eduardo
+  - 5.5 Ana		
 6. **Automated Solver Verification**
    - 6.1 DPLL SAT Solver 
    - 6.2 Z3 Playground
