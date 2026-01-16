@@ -249,7 +249,6 @@
 (¬S_1_tennis ∨ S_2_tennis ∨ ¬S_3_tennis ∨ S_2_bowling ∨ S_3_bowling ∨ S_4_bowling) ∧
 (¬S_1_tennis ∨ ¬S_2_tennis ∨ S_3_tennis ∨ S_2_bowling ∨ S_3_bowling ∨ S_4_bowling) ∧
 (¬S_1_tennis ∨ ¬S_2_tennis ∨ ¬S_3_tennis ∨ S_2_bowling ∨ S_3_bowling ∨ S_4_bowling)
-(S_1_handball ∨ S_2_handball)
 (S_1_handball ∨ C_4_white)
 (C_3_white ∨ S_2_handball)
 (C_3_white ∨ C_4_white)
