@@ -2,9 +2,7 @@
 
 ![Cookie Puzzle Photo](C:\Users\admin\Downloads\cookie_puzzle.jpg)
 
-Aunt Geralda knows that one of Ana, Bruno, Cecilia, Daniela or Eduardo ate all
-the cookies. She also knows that the guilty always lie and the innocent always
-tell the truth.
+Aunt Geralda knows that one of Ana, Bruno, Cecilia, Daniela or Eduardo ate all the cookies. She also knows that the guilty always lie and the innocent always tell the truth.
 
 - Bruno says, "The culprit is either Eduardo or Daniela".
 - Eduardo says: "The guilty person is a girl."

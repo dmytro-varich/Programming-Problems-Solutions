@@ -1,3 +1,28 @@
+"""
+Variable Mapper - CNF Formula Encoder/Decoder
+This module provides functionality to encode and decode CNF (Conjunctive Normal Form) 
+formulas by mapping between human-readable variable names and numeric identifiers.
+The module supports bidirectional conversion:
+- Encoding: Replaces variable names with their corresponding ordinal numbers
+- Decoding: Replaces ordinal numbers back to their original variable names
+This is particularly useful for:
+- Preparing CNF formulas for SAT solvers that require numeric input
+- Converting SAT solver output back to human-readable format
+- Reducing file size and improving parsing performance
+Typical workflow:
+1. Create a mapping file with one variable name per line
+2. Encode the CNF formula file using the mapping
+3. Process the encoded file (e.g., with a SAT solver)
+4. Decode the results back to variable names
+Functions:
+    read_variable_mapping: Loads variable mappings from a file
+    encode_file: Converts variable names to numbers in a file
+    decode_file: Converts numbers back to variable names in a file
+    main: Command-line interface for the encoder/decoder
+Example:
+    $ python variable_mapper.py variables.txt CNF_1.txt encode CNF_1_encoded.txt
+    $ python variable_mapper.py variables.txt solution.txt decode solution_decoded.txt
+"""
 import sys
 import re
 from pathlib import Path

@@ -1,3 +1,4 @@
+"""Script to remove duplicate lines from a text file."""
 import sys
 
 
