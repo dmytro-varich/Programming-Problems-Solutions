@@ -526,7 +526,7 @@ class PuzzleConstraints:
         
         return CNFFormula(clauses)
     
-    def generate_base_constraints(self) -> List[CNFFormula]:
+    def generate_base_constraints(self, property_classes: list[type[PuzzleElement]]) -> List[CNFFormula]:
         """
         Generates all base constraints for the puzzle.
         
@@ -537,8 +537,6 @@ class PuzzleConstraints:
         This ensures a valid puzzle configuration.
         """
         base_constraints = []
-        
-        property_classes = [Color, Nationality, Animal, Sport]
         
         for prop_class in property_classes:
             # Each house has exactly one value
@@ -619,9 +617,10 @@ def save_clues_to_dimacs(clues: List[CNFFormula], file_path: str = "puzzle.cnf")
 
 def generate_clues():
     puzzle = PuzzleConstraints(num_houses=4)
+    property_classes = [Color, Nationality, Animal, Sport]
     
     # === BASE CONSTRAINTS ===
-    base_constraints = puzzle.generate_base_constraints()
+    base_constraints = puzzle.generate_base_constraints(property_classes)
     
     # === PUZZLE CLUES ===
     
