@@ -526,7 +526,7 @@ class PuzzleConstraints:
         
         return CNFFormula(clauses)
     
-    def generate_base_constraints(self, property_classes: list[type[PuzzleElement]]) -> List[CNFFormula]:
+    def generate_base_constraints(self, property_classes: List[type[PuzzleElement]]) -> List[CNFFormula]:
         """
         Generates all base constraints for the puzzle.
         
