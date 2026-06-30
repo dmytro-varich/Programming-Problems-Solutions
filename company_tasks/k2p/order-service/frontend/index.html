@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Order Service</title>
+</head>
+<body>
+
+  <h1>Order Service</h1>
+
+  <h2>Create Client</h2>
+  <input id="clientName" placeholder="Client name" />
+  <button onclick="createClient()">Create</button>
+
+  <h2>Create Product</h2>
+  <input id="productName" placeholder="Product name" />
+  <input id="productPrice" placeholder="Price" type="number" />
+  <button onclick="createProduct()">Create</button>
+
+  <h2>Create Order</h2>
+  <input id="orderClientId" placeholder="Client ID" />
+  <input id="orderProductId1" placeholder="Product ID" />
+  <input id="orderQuantity1" placeholder="Quantity" type="number" min="1" value="1" />
+  <input id="orderProductId2" placeholder="Product ID (optional)" />
+  <input id="orderQuantity2" placeholder="Quantity" type="number" min="1" value="1" />
+  <button onclick="createOrder()">Create Order</button>
+
+  <pre id="output"></pre>
+
+  <script src="app.js"></script>
+</body>
+</html>
