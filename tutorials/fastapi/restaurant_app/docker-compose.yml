@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: restaurant_backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/data:/app/data  # Mounts host directory into container
+    environment:
+      - DATABASE_URL=sqlite+aiosqlite:///./data/restaurant.db
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: restaurant_frontend
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+    environment:
+      - VITE_API_URL=http://localhost:8000/api/v1
